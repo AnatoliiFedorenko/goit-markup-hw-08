@@ -1,0 +1,21 @@
+ %closeButton {
+ position: absolute;
+ top: 0;
+ right: 0;
+ margin-top: 8px;
+ margin-right: 8px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ height: 30px;
+ width: 30px;
+
+ border: 1px solid rgba(0, 0, 0, 0.1);
+ border-radius: 50%;
+
+ color: var(--primary-text-color);
+ background-color: var(--primary-white-color);
+
+ cursor: pointer;
+}

@@ -1,0 +1,73 @@
+/* Підвал */
+.footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+}
+
+.footer__section {
+    display: flex;
+    align-items: baseline;
+}
+
+/* лого-підвал */
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+    text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.footer__halflogo {
+    color: var(--accent-text-color);
+}
+
+/* контакти-підвал */
+.footer__link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.footer__address {
+    color: var(--primary-white-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.footer__address {
+    margin: 9px 0;
+}

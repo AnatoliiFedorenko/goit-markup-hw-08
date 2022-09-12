@@ -1,0 +1,75 @@
+// Підписуйтесь
+
+.subscribe__field {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+}
+
+.subscribe__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+
+    padding-left: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    color: var(--primary-white-color);
+    background-color: #2f303a;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+        border: 1px solid var(--accent-text-color);
+    }
+}
+
+
+.subscribe__list {
+    position: relative;
+    display: flex;
+}
+
+.subscribe__list button {
+    margin-left: 12px;
+}
+
+.subscribe__button {
+    @extend %button;
+
+    padding-left: 38px;
+
+    min-width: 200px;
+}
+
+.subscribe__icon {
+    position: absolute;
+    left: 92%;
+    top: 30%;
+
+    fill: var(--primary-white-color);
+}

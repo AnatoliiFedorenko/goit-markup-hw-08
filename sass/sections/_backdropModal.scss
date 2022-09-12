@@ -1,0 +1,65 @@
+/* бекдроп + модалка */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: red; */
+    opacity: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop__closeButton {
+    @extend %closeButton;
+
+    transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.backdrop__closeIcon {
+    fill: currentColor;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-height: 581px;
+    max-width: 528px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    background-color: #fff;
+    /* background-color: red; */
+
+    border-radius: 4px;
+}
+
+.modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: #212121;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
