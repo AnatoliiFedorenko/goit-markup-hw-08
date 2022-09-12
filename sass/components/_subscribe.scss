@@ -1,75 +1,107 @@
 // Підписуйтесь
 
 .subscribe__field {
-    /* position: relative; */
-    display: flex;
-    flex-direction: column;
-    margin-left: 93px;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 90px;
+    margin-top: 0px;
+  }
 }
 
 .subscribe__label {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 
-    color: #ffffff;
+  color: #ffffff;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .subscribe__input {
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: 358px;
     height: 50px;
+  }
+  width: 100%;
+  height: 50px;
 
-    padding-left: 16px;
+  padding-left: 16px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 
-    color: var(--primary-white-color);
-    background-color: #2f303a;
+  color: var(--primary-white-color);
+  background-color: #2f303a;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &::placeholder {
-        font-size: 16px;
-        line-height: 1.25;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
 
-        color: rgba(255, 255, 255, 0.6);
-    }
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-    &:focus {
-        border: 1px solid var(--accent-text-color);
-    }
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+  }
 }
-
 
 .subscribe__list {
-    position: relative;
-    display: flex;
-}
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
-.subscribe__list button {
-    margin-left: 12px;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .subscribe__button {
-    @extend %button;
+  @extend %button;
 
-    padding-left: 38px;
+  margin-top: 20px;
+  padding-left: 38px;
 
-    min-width: 200px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+    margin-top: 0px;
+  }
+
+  min-width: 200px;
 }
 
 .subscribe__icon {
-    position: absolute;
+  position: absolute;
+
+  left: 78%;
+  top: 72%;
+
+  @media screen and (min-width: $mobile) {
+    left: 62%;
+    top: 72%;
+  }
+
+  @media screen and (min-width: $desktop) {
     left: 92%;
     top: 30%;
+  }
 
-    fill: var(--primary-white-color);
+  fill: var(--primary-white-color);
 }
