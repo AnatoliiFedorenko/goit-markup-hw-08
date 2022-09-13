@@ -42,8 +42,13 @@
     screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .heroi__box {
-      background-image: url(../images/background-mobx2.jpeg);
+    .solutions {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-mobx2.jpeg);
     }
   }
 }
@@ -54,8 +59,13 @@
     screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .heroi__box {
-      background-image: url(../images/background-tabletx2.jpeg);
+    .solutions {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-tabletx2.jpeg);
     }
   }
 }
@@ -66,8 +76,13 @@
     screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .heroi__box {
-      background-image: url(../images/backgroundx2.jpg);
+    .solutions {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/backgroundx2.jpeg);
     }
   }
 }
