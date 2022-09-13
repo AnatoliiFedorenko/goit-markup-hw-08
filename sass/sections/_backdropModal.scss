@@ -40,8 +40,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  height: 609px;
-  width: 450px;
+  height: 90%;
+  width: 90%;
+
+  @media screen and (min-width: $mobile) {
+    height: 609px;
+    width: 450px;
+  }
 
   @media screen and (min-width: $desktop) {
     height: 581px;

@@ -1,6 +1,11 @@
 .form {
-  height: 342px;
-  width: 370px;
+  height: 80%;
+  width: 80%;
+
+  @media screen and (min-width: $mobile) {
+    height: 342px;
+    width: 370px;
+  }
 
   @media screen and (min-width: $desktop) {
     width: 448px;
@@ -99,8 +104,12 @@
 
   height: 15px;
 
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 6px;
+  line-height: 1.166;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 12px;
+  }
 
   @media screen and (min-width: $desktop) {
     margin-left: 54px;
@@ -160,10 +169,8 @@
 
   display: flex;
   margin-bottom: 40px;
-  margin-left: 120px;
-  margin-right: 120px;
-  //   margin-left: 164px;
-  //   margin-right: 164px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 52px;
   max-width: 200px;
 
