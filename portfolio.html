@@ -10,36 +10,62 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="page">
-    <header class="header">
-        <div class="container container__nav">
+<header class="header">
+    <div class="container">
+        <div class="header__mobile">
+            <a class="mobile__logo" href="index.html"> <span class="mobile__halflogo">Web</span>Studio</a>
+            <button class="header__btn menu-btn">
+                <svg width="30" heiht="30" aria-label="open menu">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="mobile__nav">
+                <ul class="mobile__list list">
+                    <li class="mobile__item"><a class="mobile__link" href="index.html">Студія</a>
+                    </li>
+                    <li class="mobile__item"><a class="mobile__link mobile__link--current" href="portfolio.html">Портфоліо</a></li>
+                    <li class="mobile__item"><a class="mobile__link" href="">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <ul class="mobile__contacts list">
+                <li class="mobile__item"><a class="mobile__mail" href="mailto:example@gmail.com">
+                        example@gmail.com</a></li>
+                <li class="mobile__item"><a class="mobile__tel" href="tel:+380961111111">
+                        +38 096 111 11 11</a></li>
+            </ul>
+        </div>
+        <div class="header__inner">
             <nav class="header__nav">
                 <a class="header__logo" href="index.html"> <span class="header__halflogo">Web</span>Studio</a>
-                <ul class="header-list list">
-                    <li class="header__item"><a class="header__link" href="index.html">Студія</a></li>
+                <ul class="header__list list">
+                    <li class="header__item"><a class="header__link" href="index.html">Студія</a>
+                    </li>
                     <li class="header__item"><a class="header__link header__link--current" href="portfolio.html">Портфоліо</a></li>
                     <li class="header__item"><a class="header__link" href="">Контакти</a></li>
                 </ul>
             </nav>
-    
-            <ul class="header__contacts list">
-                <li class="header__item"><a class="header__mail" href="mailto:example@gmail.com">
-                        <svg class="header__icon" width="16" height="12">
+
+            <ul class="contacts list">
+                <li><a class="contacts__mail" href="mailto:example@gmail.com">
+                        <svg class="contacts__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         example@gmail.com</a></li>
-                <li class="header__item"><a class="header__tel" href="tel:+380961111111">
-                        <svg class="header__icon" width="10" height="16">
+                <li class="contacts__item"><a class="contacts__tel" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
         </div>
-    </header>
+    </div>
+</header>
 
     <main>
         <section class="portfolio section">

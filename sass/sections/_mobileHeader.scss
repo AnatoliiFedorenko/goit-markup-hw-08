@@ -1,0 +1,107 @@
+.header__mobile {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu-btn {
+  height: 50px;
+  width: 50px;
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.mobile__logo {
+  color: #000000;
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.mobile__halflogo {
+  color: var(--accent-text-color);
+}
+
+// .mobile__nav {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .mobile__list {
+//   display: flex;
+//   margin-left: 93px;
+// }
+
+// .mobile__item + .mobile__item {
+//   margin-left: 50px;
+// }
+
+.mobile__link {
+  display: block;
+  //   padding-top: 32px;
+  //   padding-bottom: 35px;
+  margin-bottom: 35px;
+
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.mobile__link--current {
+  color: var(--accent-text-color);
+}
+
+/* контакти */
+// .mobile__contacts {
+//   display: flex;
+//   margin-left: auto;
+//   padding: 32px 0;
+// }
+
+.mobile__mail,
+.mobile__tel {
+  color: #757575;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
