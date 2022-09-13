@@ -138,6 +138,12 @@ img {
 .join {
   margin-top: 60px;
 }
+@media screen and (min-width: 768px) {
+  .join {
+    margin-left: 165px;
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .join {
     margin-left: 70px;
@@ -307,10 +313,15 @@ img {
 
 .form {
   height: 342px;
-  width: 448px;
+  width: 370px;
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 448px;
+  }
 }
 
 .form__field {
@@ -388,14 +399,28 @@ img {
 .form__policy {
   display: flex;
   align-items: center;
-  margin-left: 54px;
-  margin-right: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 20px;
   margin-bottom: 30px;
-  max-height: 20px;
-  font-size: 14px;
-  line-height: 1.71;
+  height: 15px;
+  font-size: 12px;
+  line-height: 1.16;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .form__policy {
+    margin-left: 54px;
+    margin-right: 50px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.form__policy-details {
+  color: var(--accent-text-color);
+  margin-left: 5px;
 }
 
 .form__policy-icon {
@@ -406,11 +431,6 @@ img {
 .form__policy-checkbox:checked + .form__policy-icon {
   background-color: var(--accent-text-color);
   border: transparent;
-}
-
-.form__policy-details {
-  color: var(--accent-text-color);
-  margin-left: 5px;
 }
 
 /* .checkbox-img {
@@ -434,11 +454,17 @@ img {
 .form__send-button {
   display: flex;
   margin-bottom: 40px;
-  margin-left: 164px;
-  margin-right: 164px;
+  margin-left: 120px;
+  margin-right: 120px;
   padding: 10px 52px;
   max-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .form__send-button {
+    margin-left: 164px;
+    margin-right: 164px;
+  }
 }
 
 /* header */
@@ -880,6 +906,15 @@ img {
   justify-content: center;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: row;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__section {
     display: flex;
@@ -945,7 +980,15 @@ img {
 .buttons {
   display: flex;
   margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 326px;
+}
+@media screen and (min-width: 768px), (min-width: 1200px) {
+  .buttons {
+    justify-content: center;
+    max-width: 100%;
+  }
 }
 
 .buttons__button {
@@ -970,6 +1013,18 @@ img {
 
 .buttons__item + .buttons__item {
   margin-left: 8px;
+  margin-bottom: 15px;
+}
+.buttons__item + .buttons__item:nth-child(4n) {
+  margin-left: 0;
+}
+.buttons__item + .buttons__item:nth-child(n+4) {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px), (min-width: 1200px) {
+  .buttons__item + .buttons__item {
+    margin-left: 8px;
+  }
 }
 
 /* лого */
@@ -981,12 +1036,24 @@ img {
 
 .card-set__item {
   border: 1px solid #eeeeee;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc(100% - 30px);
   margin: 15px;
   height: 404px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 .card-set__item:hover, .card-set__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1077,12 +1144,18 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-height: 581px;
-  max-width: 528px;
+  height: 609px;
+  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   /* background-color: red; */
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+  }
 }
 
 .modal__title {

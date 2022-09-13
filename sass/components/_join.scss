@@ -3,6 +3,11 @@
 .join {
   margin-top: 60px;
 
+  @media screen and (min-width: $tablet) {
+    margin-left: 165px;
+    margin-top: 0;
+  }
+
   @media screen and (min-width: $desktop) {
     margin-left: 70px;
     margin-top: 0px;
