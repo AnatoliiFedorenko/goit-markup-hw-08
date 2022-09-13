@@ -27,7 +27,6 @@ ul {
 
 img {
   display: block;
-  height: auto;
   width: 100%;
 }
 
@@ -1192,17 +1191,6 @@ body.overflow {
   margin-left: 8px;
   margin-bottom: 15px;
 }
-.buttons__item + .buttons__item:nth-child(4n) {
-  margin-left: 0;
-}
-.buttons__item + .buttons__item:nth-child(n+4) {
-  margin-bottom: 0;
-}
-@media screen and (min-width: 768px), (min-width: 1200px) {
-  .buttons__item + .buttons__item {
-    margin-left: 8px;
-  }
-}
 
 /* лого */
 .card-set {
@@ -1215,7 +1203,6 @@ body.overflow {
   border: 1px solid #eeeeee;
   flex-basis: calc(100% - 30px);
   margin: 15px;
-  height: 404px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1272,13 +1259,20 @@ body.overflow {
   padding: 20px 24px;
 }
 
-.product__name {
+.product__name,
+.product__name--1 {
   margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 768px) {
+  .product__name--1 {
+    font-size: 16px;
+  }
 }
 
 .product__atribute {
