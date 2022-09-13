@@ -19,26 +19,28 @@
         <div class="header__mobile">
             <a class="mobile__logo" href="index.html"> <span class="mobile__halflogo">Web</span>Studio</a>
             <button class="header__btn menu-btn">
-                <svg width="30" heiht="30" aria-label="open menu">
-                    <use href="./images/icons.svg#icon-menu"></use>
-                    <use href="./images/icons.svg#icon-close"></use>
+                <svg width="30" height="30" aria-label="open menu">
+                    <use class="menu-btn__menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="menu-btn__close" href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <nav class="mobile__nav">
-                <ul class="mobile__list list">
-                    <li class="mobile__item"><a class="mobile__link" href="index.html">Студія</a>
-                    </li>
-                    <li class="mobile__item"><a class="mobile__link mobile__link--current" href="portfolio.html">Портфоліо</a></li>
-                    <li class="mobile__item"><a class="mobile__link" href="">Контакти</a></li>
-                </ul>
-            </nav>
+            <div class="mobile-menu">
+                <nav class="mobile__nav">
+                    <ul class="mobile__list list">
+                        <li class="mobile__item"><a class="mobile__link"
+                                href="index.html">Студія</a></li>
+                        <li class="mobile__item"><a class="mobile__link mobile__link--current" href="portfolio.html">Портфоліо</a></li>
+                        <li class="mobile__item"><a class="mobile__link" href="">Контакти</a></li>
+                    </ul>
+                </nav>
 
-            <ul class="mobile__contacts list">
-                <li class="mobile__item"><a class="mobile__mail" href="mailto:example@gmail.com">
-                        example@gmail.com</a></li>
-                <li class="mobile__item"><a class="mobile__tel" href="tel:+380961111111">
-                        +38 096 111 11 11</a></li>
-            </ul>
+                <ul class="mobile__contacts list">
+                    <li class="mobile__item"><a class="mobile__mail" href="mailto:example@gmail.com">
+                            example@gmail.com</a></li>
+                    <li class="mobile__item"><a class="mobile__tel" href="tel:+380961111111">
+                            +38 096 111 11 11</a></li>
+                </ul>
+            </div>
         </div>
         <div class="header__inner">
             <nav class="header__nav">
@@ -310,6 +312,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
+
     </body>
-    
     </html>

@@ -1,6 +1,7 @@
 .header__mobile {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media screen and (min-width: $tablet) {
     display: none;
@@ -18,6 +19,37 @@
   z-index: 2;
   background-color: #fff;
   border-radius: 5px;
+
+  .menu-btn__close {
+    display: none;
+  }
+  &.active {
+    .menu-btn__menu {
+      display: none;
+    }
+    .menu-btn__close {
+      display: block;
+    }
+  }
+}
+
+// МЕНЮ
+
+.mobile-menu {
+  display: none;
+  &.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding: 40px;
+  }
+  overflow: auto;
 }
 
 .mobile__logo {
@@ -41,30 +73,11 @@
   color: var(--accent-text-color);
 }
 
-// .mobile__nav {
-//     display: flex;
-//     align-items: center;
-// }
-
-// .mobile__list {
-//   display: flex;
-//   margin-left: 93px;
-// }
-
-// .mobile__item + .mobile__item {
-//   margin-left: 50px;
-// }
-
 .mobile__link {
-  display: block;
-  //   padding-top: 32px;
-  //   padding-bottom: 35px;
-  margin-bottom: 35px;
-
   color: var(--primary-text-color);
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -81,22 +94,19 @@
   color: var(--accent-text-color);
 }
 
-/* контакти */
-// .mobile__contacts {
-//   display: flex;
-//   margin-left: auto;
-//   padding: 32px 0;
-// }
-
 .mobile__mail,
 .mobile__tel {
   color: #757575;
   text-decoration: none;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
+  font-size: 34px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+
+  //   @media screen and (min-width: $mobile) {
+  //     font-size: 34px;
+  //   }
 
   transition: color 250ms var(--cubic);
 
