@@ -116,6 +116,10 @@
   &:focus {
     color: var(--accent-text-color);
   }
+
+  @media screen and (max-width: $desktop) {
+    font-size: 12px;
+  }
 }
 
 .contacts__item {

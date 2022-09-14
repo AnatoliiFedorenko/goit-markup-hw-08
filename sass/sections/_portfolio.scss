@@ -7,7 +7,7 @@
 /* кнопки */
 .buttons {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
   justify-content: flex-start;
 
@@ -16,6 +16,9 @@
   @media screen and (min-width: $tablet), (min-width: $desktop) {
     justify-content: center;
     max-width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 60px;
   }
 }
 
